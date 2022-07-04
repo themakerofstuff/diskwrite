@@ -53,4 +53,4 @@ endif
 
 add_global_arguments('-Wextra', '-Wall', language : 'c')
 
-executable('diskwrite-cli', 'src/cli/main.c', 'src/cli/functions/getFileByteNum.c', install : true)
+executable('diskwrite-cli', 'src/cli/functions/getFileByteNum.c', 'src/cli/main.c', install : true)

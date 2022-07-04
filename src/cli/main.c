@@ -5,9 +5,10 @@
 #include <fcntl.h>
 #include <stdlib.h>
 #include <sys/mman.h>
-#include "../../include/getFileByteNum.h"
 
-int main(int argc, char** argv) {
+
+
+int main(int argc, char* argv[]) {
     if (argc < 3) {
         perror("Incorrect number of arguments.");
     }
