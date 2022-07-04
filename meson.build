@@ -51,6 +51,6 @@ if not has_wextra
   error('This compiler does not support -Wextra.')
 endif
 
-add_global_arguments('-Wextra -Wall', language : 'c')
+add_global_arguments('-Wextra', '-Wall', language : 'c')
 
 executable('diskwrite-cli', 'src/cli/main.c', 'src/cli/functions/getFileByteNum.c', install : true)
