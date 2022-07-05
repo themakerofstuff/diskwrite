@@ -20,7 +20,6 @@ void writetodisk(int argc, char** argv) {
     strcpy(tname, argv[2]);
 
     unsigned long byte_num = get_file_byte_num(sname);
-    printf("The size of the source file is% LD bytes.\n", byte_num);
 
     int fd = open(sname, O_RDWR|O_CREAT, 0644);
     int tfd = open(tname, O_RDWR|O_CREAT, 0644);
