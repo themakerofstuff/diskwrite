@@ -20,7 +20,7 @@ void memwritetodisk(int argc, char** argv) {
         return 1;
     }
 
-    printf("Writing data from %s to %s...", argv[1], argv[2]); 
+    printf("Writing data from %s to %s...");
 
     int slen = strlen(argv[1]);
     int tlen = strlen(argv[2]);

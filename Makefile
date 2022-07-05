@@ -1,8 +1,8 @@
 lib:
 	@echo Making libdw.so
-	gcc -c -O2 -fPIC -o obj/getFileByteNum.o src/lib/getFileByteNum.c
+	gcc -c -O2 -fPIC -o obj/getFileByteSize.o src/lib/getFileByteSize.c
 	gcc -c -O2 -fPIC -o obj/libdw-main.o src/lib/main.c
-	gcc -O2 -shared -o lib/libdw.so obj/getFileByteNum.o obj/libdw-main.o
+	gcc -O2 -shared -o lib/libdw.so obj/getFileByteSize.o obj/libdw-main.o
 
 install-lib:
 	@echo Installing libdw.so
@@ -25,9 +25,9 @@ install-prog:
 
 all:
 	@echo Making libdw.so
-	gcc -c -O2 -fPIC -o obj/getFileByteNum.o src/lib/getFileByteNum.c
+	gcc -c -O2 -fPIC -o obj/getFileByteSize.o src/cli/getFileByteSize.c
 	gcc -c -O2 -fPIC -o obj/main.o src/lib/main.c
-	gcc -O2 -shared -o lib/libdw.so obj/getFileByteNum.o obj/main.o
+	gcc -O2 -shared -o lib/libdw.so obj/getFileByteSize.o obj/main.o
 	@echo Installing libdw.so
 	cp lib/libdw.so /usr/lib/
 	ldconfig
