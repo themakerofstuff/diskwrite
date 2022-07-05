@@ -8,7 +8,7 @@ This program also includes a disk writing library.
 # Installation
 The following programs are required for compilation:
 - `git`
-- `gcc'
+- `gcc`
 - `make`
 - `sudo`
 
