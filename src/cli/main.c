@@ -3,6 +3,6 @@
 
 
 int main(int argc, char** argv) {
-	memwrite(argc, argv);
+	memwritetodisk(argc, argv);
 	return 0;
 }

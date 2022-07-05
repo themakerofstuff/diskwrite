@@ -8,7 +8,7 @@
 #include <dw/dw.h>
 
 
-void memwrite(int argc, char** argv) {
+void memwritetodisk(int argc, char** argv) {
     if (argc < 3) {
         perror("Incorrect number of arguments.");
     }

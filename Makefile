@@ -41,3 +41,16 @@ all:
 	@echo Installing diskwrite-cli
 	cp bin/diskwrite-cli /usr/bin/
 	chmod +x /usr/bin/diskwrite-cli
+
+clean:
+	@echo Cleaning files
+	rm -rf obj/*
+	rm -rf bin/*
+	rm -rf lib/*
+	
+uninstall:
+	@echo Removing libraries
+	rm -rf /usr/lib/libdw.so
+	ldconfig
+	@echo Removing programs
+	rm -rf /usr/bin/diskwrite-cli

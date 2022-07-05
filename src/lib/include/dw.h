@@ -1,1 +1,1 @@
-extern void writetodisk(int argc, char* argv[]);
+extern void memwritetodisk(int argc, char* argv[]);
