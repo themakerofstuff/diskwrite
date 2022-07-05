@@ -8,10 +8,11 @@
 #include <dw/dw.h>
 
 
-void writetodisk(int argc, char** argv) {
+void memwrite(int argc, char** argv) {
     if (argc < 3) {
         perror("Incorrect number of arguments.");
     }
+
     int slen = strlen(argv[1]);
     int tlen = strlen(argv[2]);
     char *sname = (char*)malloc(sizeof(char)*(slen + 1));
