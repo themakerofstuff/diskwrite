@@ -12,6 +12,15 @@ void memwritetodisk(int argc, char** argv) {
     if (argc < 3) {
         perror("Incorrect number of arguments.");
     }
+    char opt;
+    printf("This action will overwrite all data on %s.\n", argv[2]);
+    printf("Are you sure you want to continue? [Y/N] ALL DATA ON THIS DRIVE WILL BE ERASED!");
+    scanf("%s", opt);
+    if (opt == "N" || opt == "n") {
+        return 1;
+    }
+
+    printf("Writing data from %s to %s...", argv[1], argv[2]); 
 
     int slen = strlen(argv[1]);
     int tlen = strlen(argv[2]);
